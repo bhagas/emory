@@ -1,0 +1,992 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:500';
+
+@font-face{
+  	font-family:'avant-garde-bold';
+  	src: url('../fonts/avant-garde-bold.otf');
+}
+
+@font-face{
+  	font-family:'avant-garde-regular';
+  	src: url('../fonts/avant-garde-regular.otf');
+}
+
+.font-title{
+	font-family:'avant-garde-bold';
+	color: #ffffff;
+}
+
+.font-title-regular{
+	font-family:'avant-garde-regular';
+	color: #ffffff;
+}
+
+.font-title-black{
+	font-family:'avant-garde-bold';
+}
+
+.font-title-black-roboto{
+	font-family:'Roboto', sans-serif;
+}
+
+.font-title-roboto{
+	font-family:'Roboto', sans-serif;
+	color: #ffffff;	
+}
+
+.font-general-white{
+	font-family: 'Roboto', sans-serif;
+	color: #ffffff;
+}
+
+.font-general{
+	font-family: 'Roboto', sans-serif;
+	color: #333;
+}
+
+.m-t-0{
+	margin-top: 0px;
+}
+
+.m-t-5{
+	margin-top: 5px;
+}
+
+.m-t-10{
+	margin-top: 10px;
+}
+
+.m-t-15{
+	margin-top: 15px;
+}
+
+.m-t-20{
+	margin-top: 20px;
+}
+
+.m-t-25{
+	margin-top: 25px;
+}
+
+.m-t-30{
+	margin-top: 30px;
+}
+
+.m-b-0{
+	margin-bottom: 0px;
+}
+
+.m-b-5{
+	margin-bottom: 5px;
+}
+
+.m-b-10{
+	margin-bottom: 10px;
+}
+
+.m-b-15{
+	margin-bottom: 15px;
+}
+
+.m-b-20{
+	margin-bottom: 20px;
+}
+
+.m-b-25{
+	margin-bottom: 25px;
+}
+
+.m-b-30{
+	margin-bottom: 30px;
+}
+
+.p-t-0{
+	padding-top: 0px;
+}
+
+.p-t-5{
+	padding-top: 5px;
+}
+
+.p-t-10{
+	padding-top: 10px;
+}
+
+.p-t-50{
+	padding-top: 50px;
+}
+
+.p-t-80{
+	padding-top: 80px;
+}
+
+.p-b-0{
+	padding-bottom: 0px;
+}
+
+.p-b-5{
+	padding-bottom: 5px;
+}
+
+.p-b-10{
+	padding-bottom: 10px;
+}
+
+.p-b-15{
+	padding-bottom: 15px;
+}
+
+
+.p-l-0{
+	padding-left: 0px;
+}
+
+.p-l-2-5{
+	padding-left: 2.5px;
+}
+
+.p-l-5{
+	padding-left: 5px;
+}
+
+.p-l-10{
+	padding-left: 10px;
+}
+
+.p-l-15{
+	padding-left: 15px;
+}
+
+
+.p-r-0{
+	padding-right: 0px;
+}
+
+.p-r-2-5{
+	padding-right: 2.5px;
+}
+
+.p-r-5{
+	padding-right: 5px;
+}
+
+.p-r-10{
+	padding-right: 10px;
+}
+
+.p-r-15{
+	padding-right: 15px;
+}
+
+
+.full-background-image{
+	background: url(/images/template/background.png) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.content-home{
+	width: 100%;
+	height: 40px;
+	-webkit-transform: skew(60deg);
+	   -moz-transform: skew(60deg);
+	     -o-transform: skew(60deg);
+	background: #090635;
+	border-right: 6px solid #ffffff;
+	border-top:3px solid #ffffff;
+	border-bottom:3px solid #ffffff;
+	position: relative;
+}
+
+.content-about-us{
+	width: 100%;
+	height: 40px;
+	-webkit-transform: skew(60deg);
+	   -moz-transform: skew(60deg);
+	     -o-transform: skew(60deg);
+	background: #120f4e;
+	border-right: 6px solid #ffffff;
+	border-top:3px solid #ffffff;
+	border-bottom:3px solid #ffffff;
+}
+
+.content-products{
+	width: 100%;
+	height: 40px;
+	-webkit-transform: skew(60deg);
+	   -moz-transform: skew(60deg);
+	     -o-transform: skew(60deg);
+	background: #120f4e;
+	border-right: 6px solid #ffffff;
+	border-top:3px solid #ffffff;
+	border-bottom:3px solid #ffffff;
+}
+
+.content-design{
+	width: 100%;
+	height: 40px;
+	-webkit-transform: skew(60deg);
+	   -moz-transform: skew(60deg);
+	     -o-transform: skew(60deg);
+	background: #120f4e;
+	border-right: 6px solid #ffffff;
+	border-top:3px solid #ffffff;
+	border-bottom:3px solid #ffffff;
+}
+
+.content-material{
+	width: 100%;
+	height: 40px;
+	-webkit-transform: skew(60deg);
+	   -moz-transform: skew(60deg);
+	     -o-transform: skew(60deg);
+	background: #120f4e;
+	border-right: 6px solid #ffffff;
+	border-top:3px solid #ffffff;
+	border-bottom:3px solid #ffffff;
+}
+
+.content-contact{
+	width: 100%;
+	height: 40px;
+	-webkit-transform: skew(60deg);
+	   -moz-transform: skew(60deg);
+	     -o-transform: skew(60deg);
+	background: #120f4e;
+	border-right: 6px solid #ffffff;
+	border-top:3px solid #ffffff;
+	border-bottom:3px solid #ffffff;
+}
+
+header .content-two a{
+	text-decoration: none;
+}
+
+header .content-two p{
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 16px;
+	font-family:'avant-garde-bold';
+}
+
+.bg-header{
+	background: url('/images/template/banner.png') no-repeat center center;
+	background-size: cover;
+}
+
+/*.jumbotron {
+    position: relative;
+    background: url(/images/template/banner.png) center center;
+    width: 100%;
+    height: 236px;
+    background-size: cover;
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+
+.jumbotron .menu{
+	position:absolute;
+	bottom:0px;
+}
+
+.jumbotron .position-menu{
+	position:absolute;
+	bottom:-10px;
+}
+
+.jumbotron .position-menu li a{
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 16px;
+	font-family:'avant-garde-bold';
+
+}
+
+.jumbotron .position-menu li a:hover{
+	color: #19B5FE;
+	font-weight: 600;
+	font-size: 16px;
+	font-family:'avant-garde-bold';
+	text-decoration: none;
+}
+
+.jumbotron .position-menu .menu-home{
+	margin-left: 15px;
+
+}
+
+.jumbotron .position-menu .menu-about-us{
+	margin-left: 80px;
+
+}
+
+.jumbotron .position-menu .menu-product{
+	margin-left: 30px;
+
+}
+
+.jumbotron .position-menu .menu-design{
+	margin-left: 30px;
+
+}
+
+.jumbotron .position-menu .menu-material{
+	margin-left: 60px;
+
+}
+
+.jumbotron .position-menu .menu-contact{
+	margin-left: 35px;
+
+}*/
+
+.footer-desktop{
+	position: relative;
+    background: url(/images/template/footer.png) center center;
+    width: 100%;
+    height: 260px;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.footer-mobile{
+	position: relative;
+    background: url(/images/template/footer.png) center center;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.menu-footer li a{
+	font-family: 'Roboto', sans-serif;
+	color: #ffffff;
+}
+
+.menu-footer li a:hover{
+	font-family: 'Roboto', sans-serif;
+	color: #19B5FE;
+	text-decoration: none;
+}
+
+.address{
+	vertical-align:top;
+	border-top-style:none
+}
+
+.contact-us td{
+	color: #ffffff;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+.sidebar .content{
+	width: 100%;
+	height: 200px;
+	background-color: rgba(255,255,255,0.2);
+	padding: 15px;
+}
+
+.sidebar .content h3{
+	font-family:'avant-garde-bold';
+	color: yellow;
+}
+
+.sidebar a{
+	text-decoration: none;
+}
+
+.sidebar a:hover .content{
+	background-color: rgba(0,0,0,0.50);
+}
+
+/*.sidebar-about-us{
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:5px;
+}
+
+.sidebar-about-us .content{
+	background: rgba(255,255,255,0.2);
+	height: 200px;
+}
+
+.sidebar-about-us .content h3{
+	font-family:'avant-garde-bold';
+	color: yellow;
+}
+
+.menu-about-us .sidebar-about-us a:hover .content{
+	background-color: rgba(0,0,0,0.50);
+}
+
+
+.sidebar-product{
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:5px;
+}
+
+.sidebar-product .content{
+	background: rgba(255,255,255,0.2);
+	height: 200px;
+}
+
+.sidebar-product .content h3{
+	font-family:'avant-garde-bold';
+	color: yellow;
+}
+
+.menu-product .sidebar-product a:hover .content{
+	background-color: rgba(0,0,0,0.50);
+}
+
+.sidebar-design{
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:5px;
+}
+
+.sidebar-design .content{
+	background: rgba(255,255,255,0.2);
+	height: 200px;
+}
+
+.sidebar-design .content h3{
+	font-family:'avant-garde-bold';
+	color: yellow;
+}
+
+.menu-design .sidebar-design a:hover .content{
+	background-color: rgba(0,0,0,0.50);
+}
+
+.sidebar-material{
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:5px;
+}
+
+.sidebar-material .content{
+	background: rgba(255,255,255,0.2);
+	height: 200px;
+}
+
+.sidebar-material .content h3{
+	font-family:'avant-garde-bold';
+	color: yellow;
+}
+
+.menu-material .sidebar-material a:hover .content{
+	background-color: rgba(0,0,0,0.50);
+}
+
+.sidebar-contact{
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:5px;
+}
+
+.sidebar-contact .content{
+	background: rgba(255,255,255,0.2);
+	height: 200px;
+}
+
+.sidebar-contact .content h3{
+	font-family:'avant-garde-bold';
+	color: yellow;
+}
+
+.menu-contact .sidebar-contact a:hover .content{
+	background-color: rgba(0,0,0,0.50);
+}*/
+
+
+
+.slideshow-one{
+	position: relative;
+	height: 495px;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+
+/*.slideshow-one:before{
+	content: " ";
+  	position: absolute;
+  	z-index: 1;
+  	top: 0px;
+  	left: 0px;
+  	right: 0px;
+  	bottom: 0px;
+  	border-top:5px solid #ffffff;
+	border-bottom:3px solid #ffffff;
+	border-left:3px solid #ffffff;
+	border-right:5px solid #ffffff;
+}*/
+
+.slideshow-two{
+	position: relative;
+	height: 495px;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+
+/*.slideshow-two:before{
+	content: " ";
+  	position: absolute;
+  	z-index: 1;
+  	top: 0px;
+  	left: 0px;
+  	right: 0px;
+  	bottom: 0px;
+  	border-top:3px solid #ffffff;
+	border-bottom:3px solid #ffffff;
+	border-left:3px solid #ffffff;
+	border-right:5px solid #ffffff;
+}*/
+
+#slideshow-one .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#slideshow-two .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#slideshow-three .item{
+  	margin-top: 5px;
+  	margin-bottom: 3px;
+  	margin-left: 5px;
+  	margin-right: 5px;
+  	position: relative;
+}
+#slideshow-three .item img{
+  	display: block;
+  	width: 100%;
+  	height: auto;
+}
+
+/*#slideshow-three .item:before{
+	content: " ";
+  	position: absolute;
+  	z-index: 1;
+  	top: 0px;
+  	left: 0px;
+  	right: 0px;
+  	bottom: 0px;
+  	border-top:3px solid #ffffff;
+	border-bottom:5px solid #ffffff;
+	border-left:5px solid #ffffff;
+	border-right:5px solid #ffffff;
+}*/
+
+/* about us page*/
+.header-page-about-us{
+	position: relative;
+	background: url(/images/template/about-us-header.png) center center ;
+	width: 100%;
+	height: 200px;
+	background-size: cover;
+	overflow: hidden;
+	margin-bottom: 0px;
+}
+
+.company_overview{
+	position: relative;
+    background: url(/images/template/background.png) center center fixed;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+.vision{
+	position: relative;
+    background: url(/images/template/background-two.png) center center fixed;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+.mission{
+	position: relative;
+    background: url(/images/template/background.png) center center fixed;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+.slideshow-about-us{
+	position: relative;
+    background: url(/images/template/background-two.png) center center fixed;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#slideshow-about-us .item{
+  	margin-top: 5px;
+  	margin-bottom: 3px;
+  	margin-left: 5px;
+  	margin-right: 5px;
+  	position: relative;
+}
+#slideshow-about-us .item img{
+  	display: block;
+  	width: 100%;
+  	height: auto;
+}
+
+
+/* end about us page */
+
+/* product */
+.header-page-product{
+	position: relative;
+	background: url(/images/template/product-header.png) center center ;
+	width: 100%;
+	height: 200px;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.product{
+	padding: 60px 0;
+}
+
+.background-table-white{
+	background-color: #ffffff;
+}
+/* end product */
+
+/* design */
+.header-page-design{
+	position: relative;
+	background: url(/images/template/design-header.png) center center ;
+	width: 100%;
+	height: 200px;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.our-service{
+	padding: 60px 0;
+}
+/* end design */
+
+/* material */
+.header-page-material{
+	position: relative;
+	background: url(/images/template/material-header.png) center center ;
+	width: 100%;
+	height: 200px;
+	background-size: cover;
+	overflow: hidden;
+	margin-bottom: 0px;
+}
+
+.material{
+	padding: 60px 0;
+}
+/* end material */
+
+/* contact */
+.header-page-contact{
+	position: relative;
+	background: url(/images/template/contact-header.png) center center ;
+	width: 100%;
+	height: 200px;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.contact{
+	padding: 60px 0;
+}
+/* end contact */
+
+/**************************** start mobile ****************************/
+/* general mobile */
+.navbar-fixed-top .nav {
+    padding: 15px 0;
+}
+
+.navbar-fixed-top .navbar-brand {
+    padding: 0 15px;
+}
+
+@media(min-width:768px) {
+	body{
+		/*padding-top: 30px;*/
+	}
+    .navbar-fixed-top .navbar-brand {
+        padding: 15px 0;
+    }
+}
+
+.menu-mobile li a{
+	font-family:'avant-garde-bold';
+}
+/* end general mobile */
+
+/* home */
+.visible-xs .content{
+	width: 100%;
+	height: 40px;
+	background-color: rgba(255,255,255,0.2);
+	display: table;
+}
+
+.visible-xs .position-middle{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.visible-xs a{
+	text-decoration: none
+}
+
+.visible-xs .content h5{
+	font-family:'avant-garde-bold';
+	color: yellow;
+}
+
+.visible-xs a:hover .content{
+	background-color: rgba(0,0,0,0.50);
+}
+
+.visible-sm .content{
+	width: 100%;
+	height: 40px;
+	background-color: rgba(255,255,255,0.2);
+	display: table;
+}
+
+.visible-sm .position-middle{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.visible-sm a{
+	text-decoration: none
+}
+
+.visible-sm .content h5{
+	font-family:'avant-garde-bold';
+	color: yellow;
+}
+
+.visible-xs a:hover .content{
+	background-color: rgba(0,0,0,0.50);
+}
+/*.header-home .menu-about-us-mobile{
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:5px;
+}
+
+.header-home .menu-about-us-mobile .content{
+	background: rgba(255,255,255,0.2);
+	padding:10px;
+}
+
+.header-home .menu-about-us-mobile .content h5{
+	font-family:'avant-garde-bold';
+	color: yellow;
+}
+
+.header-home .menu-about-us-mobile a:focus .content{
+	background-color: rgba(0,0,0,0.50);
+}
+
+.header-home .menu-product-mobile{
+	padding-left:0px;
+	padding-right:5px;
+	padding-top:5px;
+}
+
+.header-home .menu-product-mobile .content{
+	background: rgba(255,255,255,0.2);
+	padding:10px;
+}
+
+.header-home .menu-product-mobile .content h5{
+	font-family:'avant-garde-bold';
+	color: yellow;
+}
+
+.header-home .menu-product-mobile a:focus .content{
+	background-color: rgba(0,0,0,0.50);
+}
+
+.header-home .menu-design-mobile{
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:5px;
+}
+
+.header-home .menu-design-mobile .content{
+	background: rgba(255,255,255,0.2);
+	padding:10px;
+}
+
+.header-home .menu-design-mobile .content h5{
+	font-family:'avant-garde-bold';
+	color: yellow;
+}
+
+.header-home .menu-design-mobile a:focus .content{
+	background-color: rgba(0,0,0,0.50);
+}
+
+.header-home .menu-material-mobile{
+	padding-left:0px;
+	padding-right:5px;
+	padding-top:5px;
+}
+
+.header-home .menu-material-mobile .content{
+	background: rgba(255,255,255,0.2);
+	padding:10px;
+}
+
+.header-home .menu-material-mobile .content h5{
+	font-family:'avant-garde-bold';
+	color: yellow;
+}
+
+.header-home .menu-material-mobile a:focus .content{
+	background-color: rgba(0,0,0,0.50);
+}
+
+.header-home .menu-contact-mobile{
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.header-home .menu-contact-mobile .content{
+	background: rgba(255,255,255,0.2);
+	padding:10px;
+}
+
+.header-home .menu-contact-mobile .content h5{
+	font-family:'avant-garde-bold';
+	color: yellow;
+}
+
+.header-home .menu-contact-mobile a:focus .content{
+	background-color: rgba(0,0,0,0.50);
+}*/
+
+#slideshow-one-mobile .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#slideshow-two-mobile .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#slideshow-three-mobile .item{
+  	margin-top: 5px;
+  	margin-bottom: 2px;
+  	margin-left: 3px;
+  	margin-right: 5px;
+  	position: relative;
+}
+
+#slideshow-three-mobile .item img{
+  	display: block;
+  	width: 100%;
+  	height: auto;
+}
+/* end home */
+
+/* about us */
+.company-overview-mobile{
+	position: relative;
+    background: url(/images/template/background.png) center center fixed;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+    padding: 30px 0;
+}
+
+.vision-mobile{
+	position: relative;
+    background: url(/images/template/background-two.png) center center fixed;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+    padding: 30px 0;
+}
+
+.mission-mobile{
+	position: relative;
+    background: url(/images/template/background.png) center center fixed;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+    padding: 30px 0;
+}
+
+.slideshow-about-us-mobile{
+	position: relative;
+    background: url(/images/template/background-two.png) center center fixed;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#slideshow-about-us-mobile .item{
+  	margin-top: 5px;
+  	margin-bottom: 3px;
+  	margin-left: 5px;
+  	margin-right: 5px;
+  	position: relative;
+}
+
+#slideshow-about-us-mobile .item img{
+  	display: block;
+  	width: 100%;
+  	height: auto;
+}
+/* end about us */
+
+/* product */
+.product-mobile{
+	padding: 30px 0;
+}
+/* end product */
+
+/* our service */
+.our-service-mobile{
+	padding: 30px 0;
+}
+/* end our service */
+
+/* material */
+.material-mobile{
+	padding: 30px 0;
+}
+/* end material */
+
+/* contact */
+.contact-mobile{
+	padding: 30px 0;
+}
+/* end contact */
+/**************************** end start mobile ****************************/

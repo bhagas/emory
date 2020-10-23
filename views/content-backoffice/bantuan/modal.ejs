@@ -1,0 +1,105 @@
+<% include ../../template-backoffice/header.ejs %>
+
+<!-- BEGIN PAGE CONTENT -->
+<div class="page-content">
+  <div class="header">
+    <h2><strong>Help</strong>&nbsp;Modal</span></h2>
+    <div class="breadcrumb-wrapper">
+      <ol class="breadcrumb">
+        <li><a href="/">Dashboard</a></li>
+        <li class="active">Modal</li>
+      </ol>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel">
+        <div class="panel-header header-line">
+          <!-- Notifikasi -->
+        </div>
+        <div class="panel-content">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-basic">Basic modal</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-large">Large modal</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-full">Full modal</button>
+        </div>
+      </div>
+    </div>  
+  </div>
+  <div class="footer">
+    <div class="copyright">
+      <p class="pull-left sm-pull-reset">
+        <span>Copyright <span class="copyright">©</span> 2016 </span>
+        <span></span>.
+      </p>
+    </div>
+  </div>
+</div>
+<!-- END PAGE CONTENT -->
+
+<!-- Basic Modal -->
+<div class="modal fade" id="modal-basic" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icons-office-52"></i></button>
+        <h4 class="modal-title"><strong>Basic</strong> modal</h4>
+      </div>
+      <div class="modal-body">
+        My content...<br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-embossed" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary btn-embossed" data-dismiss="modal">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End basic modal -->
+
+<!-- Large modal -->
+<div class="modal fade" id="modal-large" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icons-office-52"></i></button>
+        <h4 class="modal-title"><strong>Large</strong> modal</h4>
+      </div>
+      <div class="modal-body">
+        My content...<br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-embossed" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary btn-embossed" data-dismiss="modal">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End large modal -->
+
+<!-- Full modal -->
+<div class="modal fade" id="modal-full" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-full">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icons-office-52"></i></button>
+        <h4 class="modal-title"><strong>Full</strong> modal</h4>
+      </div>
+      <div class="modal-body">
+        My content...<br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-embossed" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary btn-embossed" data-dismiss="modal">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End full modal -->
+
+<% include ../../template-backoffice/footer.ejs %>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+
+  } );
+</script>

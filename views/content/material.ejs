@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/images/template/shortcut_icon.ico">
+
+    <title>PT EMORY LANGGENGJAYA | PLASTIC TRAY AND PACKAGING</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/stylesheets/template/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/stylesheets/template/css/mystyle.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/stylesheets/template/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <!-- start desktop -->
+    <div class="full-background-image">
+    
+    <% include ../template/header.ejs %>
+
+    <div class="container-fluid visible-md visible-lg">
+        <div class="row">
+            <div class="header-page-material"></div>
+        </div>
+
+        <div class="row material">
+            <div class="col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+                <h2 class="font-title text-center">RECYCLING SYMBOLS</h2>
+            </div>
+
+            <div class="col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 m-t-30">
+			<% for(var i=0; i<data.length; i++)
+		
+			{
+				var a=1;
+				var a=a+i;
+			%>
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <h3 class="font-title font-white"> <%= a %>.	<%= data[i]['symbol_name'] %></h3>
+                    </div>
+                    <div class="col-md-2 col-lg-2 m-t-30">
+                        <!-- <img src="http://placehold.it/160"> -->
+                        <center><img src="/foto/<%= data[i]['foto'] %>"></center>
+                    </div>
+                    <div class="col-md-10 col-lg-10 m-t-30">
+                       <h4 class="font-title m-t-0">Description</h4>
+                       <p class="font-general-white text-justify"><%= data[i]['deskripsi'] %></p>
+
+                       <h4 class="font-title m-t-30">Properties</h4>
+                       <p class="font-general-white text-justify"><%= data[i]['properties'] %></p>
+
+                       <h4 class="font-title m-t-30">Packaging Applications</h4>
+                       <p class="font-general-white text-justify"><%= data[i]['packaging'] %></p>
+                    </div>
+                </div>
+			<% } %>
+                
+
+                
+
+            </div>
+        </div>
+    </div>
+    
+    <% include ../template/footer.ejs %>
+
+    </div>
+    <!-- end desktop -->
+
+    <!-- start mobile & tablet -->
+    <section class="full-background-image">
+    
+    <% include ../template/header_mobile.ejs %>
+    
+    <div class="container-fluid ">
+        <div class="row visible-xs p-t-50">
+           <img src="/images/template/material-header.png" class="img-responsive">
+        </div>
+
+        <div class="row visible-sm p-t-80">
+            <img src="/images/template/material-header.png" class="img-responsive">
+        </div>
+
+        <div class="row material-mobile visible-xs visible-sm">
+            <div class="col-xs-12 col-sm-12">
+                <h4 class="font-title text-center">RECYCLING SYMBOLS</h4>
+            </div>
+
+            <div class="col-xs-12 col-sm-12">
+			<% for(var i=0; i<data.length; i++)
+		
+			{
+				var a=1;
+				var a=a+i;
+			%>
+			
+                <div class="row m-t-30 visible-xs visible-sm">
+                  <div class="col-xs-12 col-sm-12">
+                    <h4 class="font-title  text-center m-t-0"><%= a %>. <%= data[i]['symbol_name'] %></h4>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 m-t-15">
+                    <center><img src="/foto/<%= data[i]['foto'] %>" class="img-responsive"></center>
+
+                    <h5 class="font-title m-t-15">Description</h5>
+                    <p class="font-general-white text-justify"><%= data[i]['deskripsi'] %></p>
+
+                    <h5 class="font-title m-t-30">Properties</h5>
+                    <p class="font-general-white text-justify"><%= data[i]['properties'] %></p>
+
+                    <h5 class="font-title m-t-30">Packaging Applications</h5>
+                    <p class="font-general-white text-justify"><%= data[i]['packaging'] %></p>
+                  </div>
+                </div>
+			<%
+			}
+			%>
+               
+
+               
+
+               
+            </div>
+        </div>
+    </div>
+
+    <% include ../template/footer_mobile.ejs %>
+
+    </section>
+    <!--  end mobile & tablet-->
+    <script src="/javascripts/template/jquery.js"></script>
+    <script src="/javascripts/template/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+           
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-92683425-1', 'auto');
+  ga('send', 'pageview');
+
+        $(document).ready(function() {
+            
+        });
+    </script>
+</body>
+
+</html>

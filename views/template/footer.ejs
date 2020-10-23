@@ -1,0 +1,108 @@
+<footer class="footer-desktop visible-md visible-lg">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 col-lg-6">
+                <h3 class="font-title">PT EMORY LANGGENGJAYA</h3>
+                <h5 class="font-general-white">P L A S T I C &nbsp;&nbsp; T R A Y &nbsp;&nbsp; A N D &nbsp;&nbsp; P A C K A G I N G</h5>
+
+                <p class="font-general-white text-justify m-t-30">
+                PT Emory Langgeng Jaya is a manufacturer of plastic trays and packaging. The company focuses on the customization of plastic specifications and dimensions to suit our customers’ needs using state of the art technology
+                </p>
+
+                <ul class="list-inline" style="margin-bottom: 0px;">
+                    <li><a href="https://shopee.co.id/emorylanggengjaya2020" target="_blank"><img src="/images/template/Shopee-logo.png" style="width: 40px;"></li>
+                    <li><a href="https://www.instagram.com/emorylanggengjaya/" target="_blank"><img src="/images/template/instagram.png" style="width: 40px;"></a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 col-lg-3">
+                <h3 class="font-title">SAMPLE PRODUCT</h3>
+
+                <ul class="list-unstyled m-t-20  menu-footer" id="list_produk">
+                    
+                </ul>
+            </div>
+
+            <div class="col-md-4 col-lg-3">
+                <h3 class="font-title">CONTACT US</h3>
+                <table class="table m-t-15 contact-us">
+                    <tr>
+                        <td style="vertical-align:top;border-top-style:none">
+                            <img src="/images/template/address_white.png">
+                        </td>
+
+                        <td style="vertical-align:top;border-top-style:none" id="address">
+                            
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td  style="vertical-align:middle;border-top-style:none">
+                            <img src="/images/template/phone_white.png">
+                        </td>
+
+                        <td style="vertical-align:middle;border-top-style:none" id="phone">
+                           
+                        </td>
+                    </tr>
+
+                    <tr> 
+                        <td  style="vertical-align:middle;border-top-style:none">
+                            <img src="/images/template/fax_white.png">
+                        </td>
+
+                        <td style="vertical-align:middle;border-top-style:none" id="fax">
+                           
+                        </td>
+                    <tr> 
+                        <td  style="vertical-align:middle;border-top-style:none">
+                            <img src="/images/template/email_white.png">
+                        </td>
+
+                        <td style="vertical-align:middle;border-top-style:none">
+                            Info&nbsp;&nbsp;:&nbsp;&nbsp;<span id="info"></span>
+                            <!-- Marketing&nbsp;&nbsp;:&nbsp;&nbsp;<span id="marketing"></span> -->
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- <script src="/plugins/jquery/jquery-1.11.1.min.js"></script> -->
+      <script src="/javascripts/template/jquery.js"></script>
+    <script src="/javascripts/template/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            
+        });
+    </script>
+
+<script type="text/javascript">
+
+$.get( "contact/get_dataa", function( data ) {
+    console.log(data[0].address);
+
+  $( "#address" ).html( data[0].address );
+   $( "#phone" ).html( data[0].phone );
+    $( "#fax" ).html( data[0].fax );
+     $( "#info" ).html( data[0].info );
+     $( "#marketing" ).html( data[0].marketing );
+  // alert( "Load was performed." );
+});
+
+$.get( "product_category/get_data", function( data ) {
+    console.log(data);
+    $.each(data, function(i, item){
+                                       //console.log(i);
+
+                                      if(i==0){
+                                        $("#list_produk").html('<li><a href="/products?cat='+item.id+'">'+item.kategori+'</a></li>');
+                                      }else{
+                                        $("#list_produk").append('<li><a href="/products?cat='+item.id+'">'+item.kategori+'</a></li>');
+                                      }
+                                      i++;
+                                    })  
+});
+</script>

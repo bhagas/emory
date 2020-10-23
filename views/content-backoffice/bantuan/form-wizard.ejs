@@ -1,0 +1,448 @@
+<% include ../../template-backoffice/header.ejs %>
+
+<!-- BEGIN PAGE CONTENT -->
+<div class="page-content">
+  <div class="header">
+    <h2><strong>Help</strong>&nbsp;Form Wizard</span></h2>
+    <div class="breadcrumb-wrapper">
+      <ol class="breadcrumb">
+        <li><a href="/">Dashboard</a></li>
+        <li class="active">Form Wizard</li>
+      </ol>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel">
+        <div class="panel-header header-line">
+          <!-- Notifikasi -->
+        </div>
+        <div class="panel-content">
+          <div class="row">
+            <div class="col-md-12">
+
+              <!-- Start form  -->
+                <div class="form-group">
+                  <label>Form wizard</label>
+                  <div class="row">
+                    <div class="col-md-12">
+                     <div class="wizard-div current wizard-sky">
+                       <form class="wizard" data-style="sky" role="form">
+                         <fieldset>
+                           <legend>Basic informaticon</legend>
+                           <div class="row">
+                             <div class="col-lg-6">
+                               <div class="form-group">
+                                 <label for="exampleInputEmail1">Email address</label>
+                                 <input type="email" class="form-control" placeholder="Enter email">
+                               </div>
+                               <div class="form-group">
+                                 <label for="exampleInputPassword1">Password</label>
+                                 <input type="password" class="form-control" placeholder="Password">
+                               </div>
+                               <div class="form-group">
+                                 <label for="exampleInputPassword1">Password again</label>
+                                 <input type="password" class="form-control" placeholder="Password">
+                               </div>
+                             </div>
+                             <div class="col-lg-6">
+                               <div class="form-group">
+                                 <label for="exampleInputPassword1">Favorite number</label>
+                                 <select class="form-control" name="favoriteNumber">
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                                 </select>
+                               </div>
+                               <div class="form-group">
+                                 <label>Own animals</label>
+                                 <div class="checkbox">
+                                   <label>
+                                   <input type="checkbox" name="animal[]" value="goat" data-checkbox="icheckbox_square-blue"> Goat
+                                   </label>
+                                 </div>
+                                 <div class="checkbox">
+                                   <label>
+                                   <input type="checkbox" name="animal[]" value="cow" data-checkbox="icheckbox_square-blue"> Cow
+                                   </label>
+                                 </div>
+                                 <div class="checkbox">
+                                   <label>
+                                   <input type="checkbox" name="animal[]" value="rooster" data-checkbox="icheckbox_square-blue"> Rooster
+                                   </label>
+                                 </div>
+                                 <div class="checkbox">
+                                   <label>
+                                   <input type="checkbox" name="animal[]" value="crocodile" data-checkbox="icheckbox_square-blue"> Crocodile
+                                   </label>
+                                 </div>
+                               </div>
+                             </div>
+                             <div class="col-lg-12">
+                               In publishing and graphic design, lorem ipsum is common placeholder text used to
+                               demonstrate the graphic elements of a document or visual presentation, such as web
+                               pages, typography, and graphical layout. It is a form of "greeking".
+                             </div>
+                           </div>
+                         </fieldset>
+                         <fieldset>
+                           <legend>Condition</legend>
+                           In publishing and graphic design, lorem ipsum is common placeholder text used to demonstrate
+                           the graphic elements of a document or visual presentation, such as web pages, typography,
+                           and graphical layout. It is a form of "greeking".
+                           Even though using "lorem ipsum" often arouses curiosity due to its resemblance to classical
+                           Latin, it is not intended to have meaning. Where text is visible in a document, people tend
+                           to focus on the textual content rather than upon overall presentation, so publishers use
+                           lorem ipsum when displaying a typeface or design in order to direct the focus to
+                           presentation. "Lorem ipsum" also approximates a typical distribution of letters in English.
+                           <div class="radio">
+                             <label>
+                             <input type="radio" name="optionsRadios" value="option1" checked data-radio="iradio_square-blue">
+                             Yes, it is totaly right.
+                             </label>
+                           </div>
+                           <div class="radio">
+                             <label>
+                             <input type="radio" name="optionsRadios" value="option2" data-radio="iradio_square-blue">
+                             No, I check it twice and it is not right.
+                             </label>
+                           </div>
+                         </fieldset>
+                         <fieldset>
+                           <legend>Final step</legend>
+                           <div class="row">
+                             <div class="col-lg-12">
+                               <p>
+                                 Even though using "lorem ipsum" often arouses curiosity due to its resemblance
+                                 to classical Latin, it is not intended to have meaning. Where text is visible in
+                                 a document, people tend to focus on the textual content rather than upon overall
+                                 presentation, so publishers use lorem ipsum when displaying a typeface or design
+                                 in order to direct the focus to presentation. "Lorem ipsum" also approximates a
+                                 typical distribution of letters in English.
+                               </p>
+                             </div>
+                             <div class="col-lg-12">
+                               <div class="row">
+                                 <div class="col-lg-6">
+                                   <div class="form-group">
+                                     <label class="sr-only" for="exampleInputName1">Your name</label>
+                                     <input type="text" class="form-control" placeholder="Your name">
+                                   </div>
+                                   <div class="form-group">
+                                     <label class="sr-only" for="exampleInputCat1">Name of your cat</label>
+                                     <input type="text" class="form-control" placeholder="Name of your cat">
+                                   </div>
+                                 </div>
+                                 <div class="col-lg-6">
+                                   <div class="form-group">
+                                     <label class="sr-only" for="hamster"></label>
+                                     <input type="text" id="hamster" class="form-control" placeholder="Name of your hamster">
+                                   </div>
+                                 </div>
+                                 <div class="col-lg-6">
+                                   <div class="form-group">
+                                     <label class="sr-only" for="grocery"></label>
+                                     <input type="text" id="grocery" class="form-control" placeholder="Name of your grocery seller">
+                                   </div>
+                                 </div>
+                               </div>
+                             </div>
+                             <div class="col-lg-12">
+                               <div class="row">
+                                 <div class="col-lg-6">
+                                   <div class="radio">
+                                     <label>
+                                     <input type="radio" name="optionsRadios" value="option1" data-radio="iradio_square-blue" checked>
+                                     Option one is this and that&mdash;be sure to include why it's great
+                                     </label>
+                                   </div>
+                                   <div class="radio">
+                                     <label>
+                                     <input type="radio" name="optionsRadios" data-radio="iradio_square-blue" value="option2">
+                                     Option two can be something else and selecting it will deselect
+                                     option one
+                                     </label>
+                                   </div>
+                                 </div>
+                                 <div class="col-lg-6">
+                                   <div class="checkbox">
+                                     <label>
+                                     <input type="checkbox" name="superPower" data-checkbox="icheckbox_square-blue"> I want have super-power
+                                     </label>
+                                   </div>
+                                   <div class="checkbox">
+                                     <label>
+                                     <input type="checkbox" name="moreSuperPower" data-checkbox="icheckbox_square-blue"> I have one or more
+                                     super-power already
+                                     </label>
+                                   </div>
+                                 </div>
+                               </div>
+                             </div>
+                             <div class="col-lg-12">
+                               <p>
+                                 Even though using "lorem ipsum" often arouses curiosity due to its resemblance
+                                 to classical Latin, it is not intended to have meaning. Where text is visible in
+                                 a document, people tend to focus on the textual content rather than upon overall
+                                 presentation, so publishers use lorem ipsum when displaying a typeface or design
+                                 in order to direct the focus to presentation. "Lorem ipsum" also approximates a
+                                 typical distribution of letters in English.
+                               </p>
+                               <p>
+                                 Using "lorem ipsum" often arouses curiosity due to its resemblance to classical
+                                 Latin, it is not intended to have meaning. Where text is visible in a document,
+                                 people tend to focus on the textual content rather than upon overall
+                                 presentation, so publishers use lorem ipsum when displaying a typeface or design
+                                 in order to direct the focus to presentation. "Lorem ipsum" also approximates a
+                                 typical distribution of letters in English.
+                               </p>
+                             </div>
+                             <noscript>
+                               <input class="nocsript-finish-btn sf-right nocsript-sf-btn" type="submit"
+                                 name="no-js-clicked" value="finish"/>
+                             </noscript>
+                           </div>
+                         </fieldset>
+                       </form>
+                     </div>
+                    </div>
+                  </div>
+                </div>
+              <!-- End form -->
+
+            </div>
+          </div>          
+        </div>
+      </div>
+    </div>  
+  </div>
+  <div class="footer">
+    <div class="copyright">
+      <p class="pull-left sm-pull-reset">
+        <span>Copyright <span class="copyright">©</span> 2016 </span>
+        <span></span>.
+      </p>
+    </div>
+  </div>
+</div>
+<!-- END PAGE CONTENT -->
+
+<!-- Modal -->
+<div class="modal fade" id="modal-full" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-full">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icons-office-52"></i></button>
+        <h4 class="modal-title"><strong>Large width</strong> modal</h4>
+      </div>
+      <div class="modal-body">
+        <!-- <div class="wizard-div current wizard-sea">
+          <form class="wizard" data-style="sea" role="form">
+            <fieldset>
+              <legend>Basic informaticon</legend>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" placeholder="Enter email">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" placeholder="Password">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password again</label>
+                    <input type="password" class="form-control" placeholder="Password">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Favorite number</label>
+                    <select class="form-control" name="favoriteNumber">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>Own animals</label>
+                    <div class="checkbox">
+                      <label>
+                      <input type="checkbox" name="animal[]" value="goat" data-checkbox="icheckbox_square-blue"> Goat
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                      <input type="checkbox" name="animal[]" value="cow" data-checkbox="icheckbox_square-blue"> Cow
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                      <input type="checkbox" name="animal[]" value="rooster" data-checkbox="icheckbox_square-blue"> Rooster
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                      <input type="checkbox" name="animal[]" value="crocodile" data-checkbox="icheckbox_square-blue"> Crocodile
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  In publishing and graphic design, lorem ipsum is common placeholder text used to
+                  demonstrate the graphic elements of a document or visual presentation, such as web
+                  pages, typography, and graphical layout. It is a form of "greeking".
+                </div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Condition</legend>
+              In publishing and graphic design, lorem ipsum is common placeholder text used to demonstrate
+              the graphic elements of a document or visual presentation, such as web pages, typography,
+              and graphical layout. It is a form of "greeking".
+              Even though using "lorem ipsum" often arouses curiosity due to its resemblance to classical
+              Latin, it is not intended to have meaning. Where text is visible in a document, people tend
+              to focus on the textual content rather than upon overall presentation, so publishers use
+              lorem ipsum when displaying a typeface or design in order to direct the focus to
+              presentation. "Lorem ipsum" also approximates a typical distribution of letters in English.
+              <div class="radio">
+                <label>
+                <input type="radio" name="optionsRadios" value="option1" checked data-radio="iradio_square-blue">
+                Yes, it is totaly right.
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                <input type="radio" name="optionsRadios" value="option2" data-radio="iradio_square-blue">
+                No, I check it twice and it is not right.
+                </label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Final step</legend>
+              <div class="row">
+                <div class="col-lg-12">
+                  <p>
+                    Even though using "lorem ipsum" often arouses curiosity due to its resemblance
+                    to classical Latin, it is not intended to have meaning. Where text is visible in
+                    a document, people tend to focus on the textual content rather than upon overall
+                    presentation, so publishers use lorem ipsum when displaying a typeface or design
+                    in order to direct the focus to presentation. "Lorem ipsum" also approximates a
+                    typical distribution of letters in English.
+                  </p>
+                </div>
+                <div class="col-lg-12">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label class="sr-only" for="exampleInputName1">Your name</label>
+                        <input type="text" class="form-control" placeholder="Your name">
+                      </div>
+                      <div class="form-group">
+                        <label class="sr-only" for="exampleInputCat1">Name of your cat</label>
+                        <input type="text" class="form-control" placeholder="Name of your cat">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label class="sr-only" for="hamster"></label>
+                        <input type="text" id="hamster" class="form-control" placeholder="Name of your hamster">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label class="sr-only" for="grocery"></label>
+                        <input type="text" id="grocery" class="form-control" placeholder="Name of your grocery seller">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="radio">
+                        <label>
+                        <input type="radio" name="optionsRadios" value="option1" data-radio="iradio_square-blue" checked>
+                        Option one is this and that&mdash;be sure to include why it's great
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label>
+                        <input type="radio" name="optionsRadios" data-radio="iradio_square-blue" value="option2">
+                        Option two can be something else and selecting it will deselect
+                        option one
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="checkbox">
+                        <label>
+                        <input type="checkbox" name="superPower" data-checkbox="icheckbox_square-blue"> I want have super-power
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                        <input type="checkbox" name="moreSuperPower" data-checkbox="icheckbox_square-blue"> I have one or more
+                        super-power already
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <p>
+                    Even though using "lorem ipsum" often arouses curiosity due to its resemblance
+                    to classical Latin, it is not intended to have meaning. Where text is visible in
+                    a document, people tend to focus on the textual content rather than upon overall
+                    presentation, so publishers use lorem ipsum when displaying a typeface or design
+                    in order to direct the focus to presentation. "Lorem ipsum" also approximates a
+                    typical distribution of letters in English.
+                  </p>
+                  <p>
+                    Using "lorem ipsum" often arouses curiosity due to its resemblance to classical
+                    Latin, it is not intended to have meaning. Where text is visible in a document,
+                    people tend to focus on the textual content rather than upon overall
+                    presentation, so publishers use lorem ipsum when displaying a typeface or design
+                    in order to direct the focus to presentation. "Lorem ipsum" also approximates a
+                    typical distribution of letters in English.
+                  </p>
+                </div>
+                <noscript>
+                  <input class="nocsript-finish-btn sf-right nocsript-sf-btn" type="submit"
+                    name="no-js-clicked" value="finish"/>
+                </noscript>
+              </div>
+            </fieldset>
+          </form>
+        </div> -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-embossed" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary btn-embossed" data-dismiss="modal">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End modal -->
+
+<% include ../../template-backoffice/footer.ejs %>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+
+  } );
+</script>

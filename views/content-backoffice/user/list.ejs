@@ -1,0 +1,67 @@
+<% include ../../template-backoffice/header.ejs %>
+
+<!-- BEGIN PAGE CONTENT -->
+<div class="page-content">
+  <div class="header">
+    <h2><strong>List</strong>&nbsp;User</h2>
+    <div class="breadcrumb-wrapper">
+      <ol class="breadcrumb">
+        <li><a href="/">Dashboard</a>
+        </li>
+        <li class="active">List User</li>
+      </ol>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel">
+        <div class="panel-header header-line">
+           <a class="btn btn-primary btn-embossed" href="/user/insert" role="button">Input Data</a>
+        </div>
+        <div class="panel-content">
+          <table class="table table-striped" id="data-user">
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>Nama</th>
+                <th>Option</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% for(var i=0; i<data.length; i++){ %>
+              <tr>
+                <td><%= i+1 %>.</td>
+                <td><%= data[i]['username'] %></td>
+                <td>
+                  <ul class="list-inline">
+                    <li><a class="btn btn-warning btn-embossed btn-sm" href="/user/edit/<%= data[i]['id_user'] %>" role="button" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></li>
+
+                    <li><a class="btn btn-danger btn-embossed btn-sm" href="/user/delete/<%= data[i]['id_user'] %>" role="button"><i class="fa fa-trash-o" aria-hidden="true"></i></a></li>
+                  </ul>
+                </td>
+              </tr>
+              <% } %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>  
+  </div>
+  <div class="footer">
+    <div class="copyright">
+      <p class="pull-left sm-pull-reset">
+        <span>Copyright <span class="copyright">©</span> 2016 </span>
+        <span></span>.
+      </p>
+    </div>
+  </div>
+</div>
+<!-- END PAGE CONTENT -->
+
+<% include ../../template-backoffice/footer.ejs %>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+      $('#data-user').DataTable();
+  } );
+</script>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/images/template/shortcut_icon.ico">
+
+    <title>PT EMORY LANGGENGJAYA | PLASTIC TRAY AND PACKAGING</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/stylesheets/template/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/stylesheets/template/css/mystyle.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/stylesheets/template/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <!-- start desktop -->
+    <section class="full-background-image">
+    <% include ../template/header.ejs %>
+
+    <div class="container-fluid visible-md visible-lg">
+        <div class="row">
+            <div class="header-page-design"></div>
+        </div>
+
+        <!-- manufacturing -->
+        <!-- title -->
+        <div class="row">
+          
+			<img src="/foto/<%= data[0]['manufacturing_1'] %>" class="img-responsive">
+        </div>
+        <!-- end title -->
+
+        <!-- content -->
+        <div class="row">
+            <img src="/foto/<%= data[0]['manufacturing_2'] %>" class="img-responsive">
+        </div>
+        <!-- end content -->
+        <!-- end  manufacturing-->
+
+        <!-- new product design and development -->
+        <!-- title -->
+        <div class="row">
+            <img src="/foto/<%= data[0]['npd_1'] %>" class="img-responsive">
+        </div>
+        <!-- end title -->
+
+        <!-- content -->
+        <div class="row">
+            <img src="/foto/<%= data[0]['npd_2'] %>" class="img-responsive">
+        </div>
+        <!-- end content -->
+        <!-- end  new product design and development-->
+
+        <!-- our service -->
+        <!-- title -->
+        <div class="row">
+           <img src="/foto/<%= data[0]['our_service'] %>" class="img-responsive">
+        </div>
+        <!-- end title -->
+
+        <!-- content -->
+        <div class="row our-service">
+            <div class="col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+                <h4 class="font-title-roboto text-center">What are we capable of producing :</h4>
+            </div>
+
+            <div class="col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 m-t-30">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6" style="padding:30px;border-right:2px solid #ffffff;border-bottom:2px solid #ffffff">
+                        <h3 class="font-title text-center">1. MATERIAL SURFACES</h3>
+
+                        <ul class="list-unstyled font-general-white m-t-30">
+                            <li><h4 class="font-title-roboto">a. Opaque</h4></li>
+                            <li><h4 class="font-title-roboto">b. Transparent</h4></li>
+                            <li><h4 class="font-title-roboto">c. Translucent</h4></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6" style="padding:30px 30px 59px 30px;border-bottom:2px solid #ffffff">
+                        <h3 class="font-title text-center">2. COLOUR</h3>
+
+                        <ul class="list-unstyled font-general-white m-t-30">
+                            <li><h4 class="font-title-roboto">Matte Colour</h4></li>
+                            <li><h4 class="font-title-roboto">Shiny Bright Colour</h4></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6" style="padding:30px;border-right:2px solid #ffffff;">
+                        <h3 class="font-title text-center">3.SIZE</h3>
+
+                        <ul class="list-unstyled font-general-white m-t-30">
+                            <li><h4 class="font-title-roboto">Maximum Length :  550 mm</h4></li>
+                            <li><h4 class="font-title-roboto">Maximum Width :  350 mm</h4></li>
+                            <li><h4 class="font-title-roboto">Maximum Height :  100 mm</h4></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6" style="padding:30px;">
+                        <h3 class="font-title text-center">4. THICKNESS</h3>
+
+                        <ul class="list-unstyled font-general-white m-t-30">
+                            <li><h4 class="font-title-roboto">Thinest : 0.18 mm</h4></li>
+                            <li><h4 class="font-title-roboto">Thinest : 3 mm</h4></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end content -->
+        <!-- end  our service-->
+    </div>
+
+    <% include ../template/footer.ejs %>
+
+    </section>
+    <!-- end desktop -->
+
+    <!-- start mobile & tablet -->
+    <section class="full-background-image">
+    
+    <% include ../template/header_mobile.ejs %>
+    
+    <div class="container-fluid">
+        <div class="row visible-xs p-t-50">
+           <img src="/images/template/design-header.png" class="img-responsive">
+		   
+        </div>
+
+        <div class="row visible-sm p-t-80">
+            <img src="/images/template/design-header.png" class="img-responsive">
+        </div>
+
+        <!-- manufacturing -->
+        <!-- title -->
+        <div class="row visible-xs visible-sm">
+			<img src="/foto/<%= data[0]['manufacturing_1'] %>" class="img-responsive">
+        </div>
+        <!-- end title -->
+
+        <!-- content -->
+        <div class="row visible-xs visible-sm">
+			 <img src="/foto/<%= data[0]['manufacturing_2'] %>" class="img-responsive">
+        </div>
+        <!-- end content -->
+        <!-- end  manufacturing-->
+
+        <!-- new product design and development -->
+        <!-- title -->
+        <div class="row visible-xs visible-sm">
+			<img src="/foto/<%= data[0]['npd_1'] %>" class="img-responsive">
+        </div>
+        <!-- end title -->
+
+        <!-- content -->
+        <div class="row visible-xs visible-sm">
+            <img src="/foto/<%= data[0]['npd_2'] %>" class="img-responsive">
+        </div>
+        <!-- end content -->
+        <!-- end  new product design and development-->
+
+        <!-- our service -->
+        <!-- title -->
+        <div class="row visible-xs visible-sm">
+            <img src="/foto/<%= data[0]['our_service'] %>" class="img-responsive">
+        </div>
+        <!-- end title -->
+
+        <!-- content -->
+        <div class="row our-service-mobile visible-xs visible-sm">
+            <div class="col-xs-12 col-sm-12">
+                <h6 class="font-title-roboto text-center">What are we capable of producing :</h6>
+            </div>
+
+            <div class="col-xs-12 col-sm-12">
+                <h5 class="font-title text-center">1. MATERIAL SURFACES</h5>
+
+                <center>
+                    <ul class="list-unstyled font-general-white m-t-15">
+                        <li><h6 class="font-title-roboto">a. Opaque</h6></li>
+                        <li><h6 class="font-title-roboto">b. Transparent</h6></li>
+                        <li><h6 class="font-title-roboto">c. Translucent</h6></li>
+                    </ul>
+                </center>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 m-t-30">
+                <h5 class="font-title text-center">2. COLOUR</h5>
+
+                <center>
+                    <ul class="list-unstyled font-general-white m-t-15">
+                        <li><h6 class="font-title-roboto">Matte Colour</h6></li>
+                        <li><h6 class="font-title-roboto">Shiny Bright Colour</h6></li>
+                    </ul>
+                </center>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 m-t-30">
+                <h5 class="font-title text-center">3.SIZE</h5>
+
+                <center>
+                    <ul class="list-unstyled font-general-white m-t-15">
+                        <li><h6 class="font-title-roboto">Maximum Length :  550 mm</h6></li>
+                        <li><h6 class="font-title-roboto">Maximum Width :  350 mm</h6></li>
+                        <li><h6 class="font-title-roboto">Maximum Height :  100 mm</h6></li>
+                    </ul>
+                </center>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 m-t-30">
+                <h5 class="font-title text-center">4. THICKNESS</h5>
+
+                <center>
+                    <ul class="list-unstyled font-general-white m-t-15">
+                        <li><h6 class="font-title-roboto">Thinest : 0.18 mm</h6></li>
+                        <li><h6 class="font-title-roboto">Thinest : 3 mm</h6></li>
+                    </ul>
+                </center>
+            </div>
+        </div>
+        <!-- end content -->
+        <!-- end  our service-->            
+    </div>
+
+    <% include ../template/footer_mobile.ejs %>
+
+    </section>
+    <!--  end mobile & tablet-->
+    <script src="/javascripts/template/jquery.js"></script>
+    <script src="/javascripts/template/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+           
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-92683425-1', 'auto');
+  ga('send', 'pageview');
+
+        $(document).ready(function() {
+            
+        });
+    </script>
+</body>
+
+</html>

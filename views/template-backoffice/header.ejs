@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/stylesheets/backoffice/images/icon-address-bar.png" type="image/png">
+    <!-- Core CSS Backoffice -->
+    <title>Backoffice PT Emory Langgengjaya</title>
+    <link href="/stylesheets/backoffice/style.css" rel="stylesheet">
+    <link href="/stylesheets/backoffice/theme.css" rel="stylesheet">
+    <link href="/stylesheets/backoffice/ui.css" rel="stylesheet">
+    <!-- End core CSS Backoffice -->
+
+    <!-- Custom CSS Backoffice -->
+    <link href="/plugins/datatables/dataTables.min.css" rel="stylesheet">
+    <link href="/plugins/step-form-wizard/css/step-form-wizard.min.css" rel="stylesheet">
+    <!-- End Custom CSS Backoffice -->
+
+    <!-- Core JS Backoffice -->
+    <script src="/plugins/modernizr/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <!-- End core JS Backoffice -->
+  </head>
+  <!-- LAYOUT: Apply "submenu-hover" class to body element to have sidebar submenu show on mouse hover -->
+  <!-- LAYOUT: Apply "sidebar-collapsed" class to body element to have collapsed sidebar -->
+  <!-- LAYOUT: Apply "sidebar-top" class to body element to have sidebar on top of the page -->
+  <!-- LAYOUT: Apply "sidebar-hover" class to body element to show sidebar only when your mouse is on left / right corner -->
+  <!-- LAYOUT: Apply "submenu-hover" class to body element to show sidebar submenu on mouse hover -->
+  <!-- LAYOUT: Apply "fixed-sidebar" class to body to have fixed sidebar -->
+  <!-- LAYOUT: Apply "fixed-topbar" class to body to have fixed topbar -->
+  <!-- LAYOUT: Apply "rtl" class to body to put the sidebar on the right side -->
+  <!-- LAYOUT: Apply "boxed" class to body to have your page with 1200px max width -->
+
+  <!-- THEME STYLE: Apply "theme-sdtl" for Sidebar Dark / Topbar Light -->
+  <!-- THEME STYLE: Apply  "theme sdtd" for Sidebar Dark / Topbar Dark -->
+  <!-- THEME STYLE: Apply "theme sltd" for Sidebar Light / Topbar Dark -->
+  <!-- THEME STYLE: Apply "theme sltl" for Sidebar Light / Topbar Light -->
+  
+  <!-- THEME COLOR: Apply "color-default" for dark color: #2B2E33 -->
+  <!-- THEME COLOR: Apply "color-primary" for primary color: #319DB5 -->
+  <!-- THEME COLOR: Apply "color-red" for red color: #C9625F -->
+  <!-- THEME COLOR: Apply "color-green" for green color: #18A689 -->
+  <!-- THEME COLOR: Apply "color-orange" for orange color: #B66D39 -->
+  <!-- THEME COLOR: Apply "color-purple" for purple color: #6E62B5 -->
+  <!-- THEME COLOR: Apply "color-blue" for blue color: #4A89DC -->
+  <!-- BEGIN BODY -->
+  <body class="fixed-topbar fixed-sidebar theme-sdtl color-primary">
+    <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <section>
+      <!-- BEGIN SIDEBAR -->
+      <div class="sidebar">
+        <div class="logopanel">
+          <h1>
+            <strong><center>Backoffice</center></strong>
+          </h1>
+        </div>
+        <div class="sidebar-inner">
+          <div class="sidebar-top" >
+            <div class="userlogged clearfix p-10" >
+              <img src="/images/backoffice/user.png" class="pull-left">
+              <div class="user-details">
+                <h4>Username login</h4>
+              </div>
+            </div>
+          </div>
+          <ul class="nav nav-sidebar m-t-10">
+            <li><a href="/backoffice"><i class="icon-home"></i><span>Dashboard</span></a></li>
+
+            <li class="nav-parent">
+              <a href="#"><i class="icon-layers"></i><span>Management Home</span> <span class="fa arrow"></span></a>
+              <ul class="children collapse">
+                <li><a href="/home_slideshow_one"> Slideshow One</a></li>
+                <li><a href="/home_slideshow_two"> Slideshow Two</a></li>
+                <li><a href="/home_slideshow_product"> Slideshow Product</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-parent">
+              <a href="#"><i class="icon-layers"></i><span>Management About Us</span> <span class="fa arrow"></span></a>
+              <ul class="children collapse">
+                <li><a href="/about_us_company_overview/edit">Company Overview</a></li>
+                <li><a href="/about_us_vision/edit">Vision</a></li>
+                <li><a href="/about_us_mission/edit">Mission</a></li>
+                <li><a href="/about_us_slideshow_product">Slideshow Product</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-parent">
+              <a href="#"><i class="icon-layers"></i><span>Management Products</span> <span class="fa arrow"></span></a>
+              <ul class="children collapse">
+                <li><a href="/product_category">Product Category</a></li>
+                <li><a href="/product">Products</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-parent">
+              <a href="#"><i class="icon-layers"></i><span>Management Design</span> <span class="fa arrow"></span></a>
+              <ul class="children collapse">
+                <li><a href="/design_manufacturing/edit">Manufacturing Process</a></li>
+                <li><a href="/design_new_product_development/edit">New Product Development & Design</a></li>
+                <li><a href="/design_our_service/edit">Our Service</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-parent">
+              <a href="#"><i class="icon-layers"></i><span>Management Material</span> <span class="fa arrow"></span></a>
+              <ul class="children collapse">
+                <li><a href="/material_recycling_symbols">Recycling Symbols</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-parent">
+              <a href="#"><i class="icon-layers"></i><span>Management Contact</span> <span class="fa arrow"></span></a>
+              <ul class="children collapse">
+                <li><a href="/contact/edit">Contact</a></li>
+              </ul>
+            </li>
+
+            <li><a href="/kritik_saran"><i class="icon-layers"></i><span>Management Kritik & Saran</span></a></li>
+
+            <li><a href="/user"><i class="icon-layers"></i><span>User</span></a></li>
+            <!-- Contoh Menu Dropdown -->
+            <!-- <li class="nav-parent">
+              <a href="#"><i class="icon-puzzle"></i><span data-translate="builder">Builder</span> <span class="fa arrow"></span></a>
+              <ul class="children collapse">
+                <li><a target="_blank" href="../builder/admin-builder/index.html"> Admin</a></li>
+                <li><a href="../builder/page-builder/index.html"> Page</a></li>
+                <li><a href="ecommerce-pricing-table.html"> Pricing Table</a></li>
+              </ul>
+            </li> -->
+            <!-- End Contoh Menu Dropdown -->
+
+            <!-- <div class="sidebar-widgets m-t-20">
+              <p class="menu-title widget-title">Help</p>
+              <ul class="folders">
+                <li>
+                  <a href="/bantuan/form-elements"><i class="icon-layers c-primary"></i>Form Elements</a> 
+                </li>
+
+                <li>
+                  <a href="/bantuan/table"><i class="icon-layers c-primary"></i>Table</a> 
+                </li>
+
+                <li>
+                  <a href="/bantuan/form-wizard"><i class="icon-layers c-primary"></i>Form Wizard</a> 
+                </li>
+
+                <li>
+                  <a href="/bantuan/modal"><i class="icon-layers c-primary"></i>Modal</a> 
+                </li>
+
+                <li>
+                  <a href="/bantuan/tabs"><i class="icon-layers c-primary"></i>Tabs</a> 
+                </li>
+              </ul>
+            </div> -->
+          </ul>
+        </div>
+      </div>
+      <!-- END SIDEBAR -->
+
+      <!--  BEGIN MAIN CONTENT -->
+      <div class="main-content">
+        <!-- BEGIN TOPBAR -->
+        <div class="topbar">
+          <div class="header-left">
+            <div class="topnav">
+              <a class="menutoggle" href="#" data-toggle="sidebar-collapsed"><span class="menu__handle"><span>Menu</span></span></a>
+              <!-- <img src="/stylesheets/backoffice/images/logo/title.png" class="m-t-15 m-l-10"> -->
+            </div>
+          </div>
+          <div class="header-right">
+            <ul class="header-menu nav navbar-nav">
+              <!-- BEGIN USER DROPDOWN -->
+              <li class="dropdown" id="user-header">
+                <a href="#" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                
+                <span class="username">Selamat datang,&nbsp;&nbsp;<strong><i>username login</i></strong></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="/autentifikasi/logout"><i class="icon-logout"></i><span>Sign Out</span></a>
+                  </li>
+                </ul>
+              </li>
+              <!-- END USER DROPDOWN -->
+            </ul>
+          </div>
+          <!-- header-right -->
+        </div>
+        <!-- END TOPBAR -->

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/images/template/shortcut_icon.ico">
+
+    <title>PT EMORY LANGGENGJAYA | PLASTIC TRAY AND PACKAGING</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/stylesheets/template/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/stylesheets/template/css/mystyle.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/stylesheets/template/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- owl-carousel -->
+    <link href="/plugins/owl-carousel/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="/plugins/owl-carousel/owl-carousel/owl.theme.css" rel="stylesheet">
+    <link href="/plugins/owl-carousel/owl-carousel/owl.transitions.css" rel="stylesheet">
+    <!-- end owl-carousel -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+    p {
+        font-family: 'Roboto', sans-serif;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- start desktop -->
+    <section>
+    
+    <% include ../template/header.ejs %>
+
+        <div class="container-fluid visible-md visible-lg">
+            <div class="row">
+                <div class="header-page-about-us"></div>
+            </div>
+            
+            <div class="row">
+                <div class="company_overview">
+                    <div class="col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+                        <h2 class="font-title text-center">PT EMORY LANGGENGJAYA</h2>
+
+                        <p class="font-general-white text-justify m-t-30" style="color:#ffffff !important">
+                           <%- data[0]['company_overview'] %>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="vision">
+                    <div class="col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+                        <h2 class="font-title-black text-center">VISION</h2>
+
+                        <h3 class="font-title-black-roboto text-center m-t-30">
+                            <%- data[0]['vision'] %>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="mission">
+                    <div class="col-md-12 col-lg-12">
+                        <h2 class="font-title text-center">MISSION</h2>
+
+                        <h3 class="font-title-roboto text-center m-t-30">
+                            <%- data[0]['mission'] %>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="slideshow-about-us">
+                    <div class="col-md-12 col-lg-12">
+                        <div class="row">
+                            <div id="slideshow-about-us">
+                                <% for(var i=0; i<slide.length; i++){ %>
+                                    <div class="item"><img src="/foto/<%= slide[i]['foto'] %>"></div>
+                                <% } %>                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <% include ../template/footer.ejs %>
+        
+    </section>
+    <!-- end desktop -->
+
+    <!-- start mobile & tablet -->
+    <% include ../template/header_mobile.ejs %>
+
+    <div class="container-fluid">
+        <div class="row visible-xs p-t-50">
+           <img src="/images/template/about-us-header.png" class="img-responsive">
+        </div>
+
+        <div class="row visible-sm p-t-80">
+            <img src="/images/template/about-us-header.png" class="img-responsive">
+        </div>
+
+        <div class="row visible-xs visible-sm">
+            <div class="company-overview-mobile">
+                <div class="col-xs-12 col-sm-12">
+                    <h4 class="font-title text-center">PT EMORY LANGGENGJAYA</h4>
+
+                    <p class="font-general-white text-justify m-t-30">
+                        <%- data[0]['company_overview'] %>
+                       <!-- PT Emory Langgeng Jaya is a manufacturer of plastic trays and packaging. The company focuses on the customization of plastic specifications and dimensions to suit our customers’ needs using state of the art technology. Established in 2012, the company provides high quality trays using our German thermoforming machine and specializes in PET, PP, HIPS and PS plastic materials. After customer consultation, our design team is able to provide accurate and customizable tray with a veriety of shapes, dimensions and colour. Located in Ungaran, Central Java – Indonesia, PT. Emory Langgeng Jaya mainly produces plastic tray widely used in food industries such as snack, biscuit, egg, bavarages, lunch trays and many more. We strive for customer service excellence and constant punctual delivery of hight quality plastic product to our customers. -->
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row visible-xs visible-sm">
+            <div class="vision-mobile">
+                <div class="col-xs-12 col-sm-12">
+                    <h4 class="font-title-black text-center">VISION</h4>
+
+                    <h5 class="font-title-black-roboto text-center m-t-30">
+                        <%- data[0]['vision'] %>
+                        <!-- <i>"To be a leading plastic tray and packaging manufacturer in Indonesia"</i> -->
+                    </h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="row visible-xs visible-sm">
+            <div class="mission-mobile">
+                <div class="col-xs-12 col-sm-12">
+                    <h4 class="font-title text-center">MISSION</h4>
+
+                    <h5 class="font-general-white text-center m-t-30">
+                        <%- data[0]['mission'] %>
+                        <!-- <i>"To produce high quality trays and packaging which would satisfy our customers’ expectation and needs"</i> -->
+                    </h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="row visible-xs visible-sm">
+            <div class="slideshow-about-us-mobile">
+                <div class="col-xs-12 col-sm-12">
+                    <div class="row">
+                        <div id="slideshow-about-us-mobile">
+                            <% for(var i=0; i<slide.length; i++){ %>
+                                <div class="item"><img src="/foto/<%= slide[i]['foto'] %>" class="img-responsive"></div>
+                            <% } %> 
+                            <!-- <div class="item"><img src="/images/template/slideshow-product-1.png"></div>
+                            <div class="item"><img src="/images/template/slideshow-product-2.png"></div>
+                            <div class="item"><img src="/images/template/slideshow-product-3.png"></div>
+                            <div class="item"><img src="/images/template/slideshow-product-4.png"></div>
+                            <div class="item"><img src="/images/template/slideshow-product-5.png"></div> -->                     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <% include ../template/footer_mobile.ejs %>
+        
+    <!--  end mobile & tablet-->
+    <script src="/javascripts/template/jquery.js"></script>
+    <script src="/javascripts/template/bootstrap.min.js"></script>
+    <!-- owl-carousel -->
+    <script src="/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
+    <!-- end owl-carousel -->
+
+    <script type="text/javascript">
+           
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-92683425-1', 'auto');
+  ga('send', 'pageview');
+
+    $(document).ready(function() {
+        $("#slideshow-about-us").owlCarousel({
+            autoPlay: 3000,
+            items : 4,
+            pagination:false,
+            itemsDesktop : [1199,3],
+            itemsDesktopSmall : [979,3]
+        });
+
+        $("#slideshow-about-us-mobile").owlCarousel({
+                autoPlay: 3000,
+                items : 4,
+                pagination:false,
+                autoHeight : true,
+                itemsMobile : [479,2],
+                itemsDesktop : [1199,3],
+                itemsDesktopSmall : [979,3]
+            });
+    });
+    </script>
+</body>
+
+</html>

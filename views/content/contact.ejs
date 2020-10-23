@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/images/template/shortcut_icon.ico">
+
+    <title>PT EMORY LANGGENGJAYA | PLASTIC TRAY AND PACKAGING</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/stylesheets/template/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/stylesheets/template/css/mystyle.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/stylesheets/template/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <!-- start desktop -->
+    <div class="full-background-image">
+    
+    <% include ../template/header.ejs %>
+    
+    <div class="container-fluid visible-md visible-lg">
+        <div class="row">
+            <div class="header-page-contact"></div>
+        </div>
+
+        <div class="row material">
+            <div class="col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+                <h2 class="font-title text-center">PT EMORY LANGGENGJAYA</h2>
+            </div>
+
+            <div class="col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 m-t-30">
+              <div class="row">
+                <div class="cl-md-6 col-lg-6" style="background-color:;height:200px;">
+                  <form id="kritik" method="post">
+                    <div class="form-group">
+                      <label style="color:white">Name</label>
+                      <input type="text" class="form-control" name="nama" id="" placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                      <label style="color:white">Email</label>
+                      <input type="email" class="form-control" name="email" id="" placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                      <label style="color:white">Contact Number</label>
+                      <input type="text" class="form-control" name="telp" id="" placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                      <label style="color:white">Message</label>
+                      <textarea class="form-control" rows="3" name="msg"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                  </form>
+                </div>  
+
+                <div class="col-md-6 col-lg-6" style="background-color:;">
+                  <h3 class="font-title m-t-0">Main Headquarter</h3>
+                  <table class="table m-t-15 contact-us">
+				  <% for(var i=0; i<data.length; i++){ %>
+                      <tr>
+                          <td style="vertical-align:top;border-top-style:none">
+                              <img src="/images/template/address_white.png">
+                          </td>
+
+                          <td style="vertical-align:top;border-top-style:none">
+                              <%= data[i]['address'] %>
+                          </td>
+                      </tr>
+
+                      <tr>
+                          <td  style="vertical-align:middle;border-top-style:none">
+                              <img src="/images/template/phone_white.png">
+                          </td>
+
+                          <td style="vertical-align:middle;border-top-style:none">
+                              <%= data[i]['phone'] %>
+                          </td>
+                      </tr>
+
+                      <tr> 
+                          <td  style="vertical-align:middle;border-top-style:none">
+                              <img src="/images/template/fax_white.png">
+                          </td>
+
+                          <td style="vertical-align:middle;border-top-style:none">
+                              <%= data[i]['fax'] %>
+                          </td>
+                      <tr> 
+                          <td  style="vertical-align:middle;border-top-style:none">
+                              <img src="/images/template/email_white.png">
+                          </td>
+
+                          <td style="vertical-align:middle;border-top-style:none">
+                              Info&nbsp;&nbsp;:&nbsp;&nbsp;<%= data[i]['info'] %>
+                              <!-- ,Marketing&nbsp;&nbsp;:&nbsp;&nbsp;<%= data[i]['marketing'] %> -->
+                          </td>
+                      </tr>
+					  <%
+					  }
+					  %>
+                  </table>
+
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.9865471131775!2d110.40267246595165!3d-7.127551933518409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7088bd6a65785f%3A0x96cb3c329f8be5a7!2sJl.+Pemuda%2C+Ungaran%2C+Ungaran+Bar.%2C+Semarang%2C+Jawa+Tengah+50511!5e0!3m2!1sid!2sid!4v1471791701870" width="100%" height="360" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    
+    <% include ../template/footer.ejs %>
+
+    </div>
+    <!-- end desktop -->
+
+    <!-- start mobile & tablet -->
+    <section class="full-background-image">
+
+    <% include ../template/header_mobile.ejs %>
+
+    <div class="container-fluid">
+        <div class="row visible-xs p-t-50">
+           <img src="/images/template/contact-header.png" class="img-responsive">
+        </div>
+
+        <div class="row visible-sm p-t-80">
+            <img src="/images/template/contact-header.png" class="img-responsive">
+        </div>
+
+        <div class="row material-mobile visible-xs visible-sm">
+            <div class="col-xs-12 col-sm-12">
+                <h4 class="font-title text-center">PT EMORY LANGGENGJAYA</h4>
+            </div>
+
+            <div class="col-xs-12 col-sm-12" style="margin-top:15px;">
+              <!-- <form>
+                <div class="form-group">
+                  <label style="color:white">Name</label>
+                  <input type="text" class="form-control" name="" id="" placeholder="">
+                </div>
+                <div class="form-group">
+                  <label style="color:white">Email</label>
+                  <input type="text" class="form-control" name="" id="" placeholder="">
+                </div>
+                <div class="form-group">
+                  <label style="color:white">Contact Number</label>
+                  <input type="text" class="form-control" name="" id="" placeholder="">
+                </div>
+                <div class="form-group">
+                  <label style="color:white">Message</label>
+                  <textarea class="form-control" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form> -->
+              <form method="POST" id="kritik-mobile">
+                    <div class="form-group">
+                      <label style="color:white">Name</label>
+                      <input type="text" class="form-control" name="nama" id="" placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                      <label style="color:white">Email</label>
+                      <input type="email" class="form-control" name="email" id="" placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                      <label style="color:white">Contact Number</label>
+                      <input type="text" class="form-control" name="telp" id="" placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                      <label style="color:white">Message</label>
+                      <textarea class="form-control" rows="3" name="msg"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                  </form>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 m-t-30">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.9865471131775!2d110.40267246595165!3d-7.127551933518409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7088bd6a65785f%3A0x96cb3c329f8be5a7!2sJl.+Pemuda%2C+Ungaran%2C+Ungaran+Bar.%2C+Semarang%2C+Jawa+Tengah+50511!5e0!3m2!1sid!2sid!4v1471791701870" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 m-t-30">
+              <h4 class="font-title text-center">Main Headquarter</h4>
+				 <% for(var i=0; i<data.length; i++){ %>
+              <ul class="list-unstyled">
+                  <li  class="m-t-15"><center><img src="/images/template/address_white.png" class="img-responsive"></center></li>
+                  <li class="text-center font-general-white m-t-10"> <%= data[i]['address'] %></li>
+
+                  <li class="m-t-15"><center><img src="/images/template/phone_white.png" class="img-responsive"></center></li>
+                  <li class="text-center font-general-white m-t-10"> <%= data[i]['phone'] %></li>
+
+                  <li class="m-t-15"><center><img src="/images/template/fax_white.png" class="img-responsive"></center></li>
+                  <li class="text-center font-general-white m-t-10"> <%= data[i]['fax'] %></li>
+
+                  <li class="m-t-15"><center><img src="/images/template/email_white.png" class="img-responsive"></center></li>
+                  <li class="text-center font-general-white m-t-10">Info&nbsp;&nbsp;:&nbsp;&nbsp;<%= data[i]['info'] %></li>
+                  <!-- <li class="text-center font-general-white m-t-5">Marketing&nbsp;&nbsp;:&nbsp;&nbsp;<%= data[i]['marketing'] %></li> -->
+              </ul>
+			  
+			  <% } %>
+            </div>
+        </div>
+    </div>
+
+    <% include ../template/footer_mobile.ejs %>
+
+    </section>
+    <!--  end mobile & tablet-->
+ 
+</body>
+
+</html>
+<script type="text/javascript">
+       
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-92683425-1', 'auto');
+  ga('send', 'pageview');
+
+	$("#kritik").on("submit",function  (e) {
+	 		e.preventDefault();
+	 		console.log();
+	 		$.post("/kritik_saran/submit_insert",$(this).serialize(), function( data ) {
+			  console.log(data);
+			  if(data){
+			  	alert('We shall reply your feedback in 2 days. Thank you !');
+			  	location.reload();
+			  }
+			});
+	 	})
+
+  $("#kritik-mobile").on("submit",function  (e) {
+      e.preventDefault();
+      console.log();
+      $.post("/kritik_saran/submit_insert",$(this).serialize(), function( data ) {
+        console.log(data);
+        if(data){
+          alert('We shall reply your feedback in 2 days. Thank you !');
+          location.reload();
+        }
+      });
+    })
+
+</script>

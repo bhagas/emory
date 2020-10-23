@@ -1,0 +1,101 @@
+<footer class="footer-mobile visible-xs visible-sm">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
+                <h4 class="text-center font-title">PT EMORY LANGGENGJAYA</h4>
+                <h6 class="text-center font-title-regular">P L A S T I C&nbsp;&nbsp;&nbsp;T R A Y&nbsp;&nbsp;&nbsp;A N D&nbsp;&nbsp;&nbsp;P A C K I N G</h6>
+            </div>
+
+            <!-- <div class="col-xs-12 col-sm-12 col-md-12">
+                <ul class="list-unstyled">
+                    <li  class="m-t-15"><center><img src="/images/template/address_white.png" class="img-responsive"></center></li>
+                    <li class="text-center font-general-white m-t-10">Jl. Pemuda No. 32 Ungaran - Indonesia</li>
+
+                    <li class="m-t-15"><center><img src="/images/template/phone_white.png" class="img-responsive"></center></li>
+                    <li class="text-center font-general-white m-t-10">024 - 76914325</li>
+
+                    <li class="m-t-15"><center><img src="/images/template/fax_white.png" class="img-responsive"></center></li>
+                    <li class="text-center font-general-white m-t-10">024 - 76914325</li>
+
+                    <li class="m-t-15"><center><img src="/images/template/email_white.png" class="img-responsive"></center></li>
+                    <li class="text-center font-general-white m-t-10">Info&nbsp;&nbsp;:&nbsp;&nbsp;emorylanggengjaya@gmail.com</li>
+                    <li class="text-center font-general-white m-t-5">Marketing&nbsp;&nbsp;:&nbsp;&nbsp;timothy@emory.co.id</li>
+                </ul>
+            </div> -->
+
+            <div class="col-xs-12 col-sm-12">
+                <center>
+                    <!-- <img src="/images/template/address_white.png" class="img-responsive"> -->
+                    <div id="address_mobile"></div>
+                </center>
+            </div>
+            <div class="col-xs-12 col-sm-12">
+                <center>
+                    <!-- <img src="/images/template/phone_white.png" class="img-responsive"> -->
+                   <!-- <h5 class="font-general-white m-t-10">024 - 76914325</h5> -->
+				    <div id="phone_mobile"></div>
+                </center>
+            </div>
+
+            <div class="col-xs-12 col-sm-12">
+                <center>
+                    <!-- <img src="/images/template/fax_white.png" class="img-responsive"> -->
+                   <!-- <h5 class="font-general-white m-t-10">024 - 76914325</h5> -->
+				   <div id="fax_mobile"></div>
+                </center>
+            </div>
+
+            <div class="col-xs-12 col-sm-12">
+                <center>
+                    <!-- <img src="/images/template/email_white.png" class="img-responsive"> -->
+                    <h5 class="font-general-white m-t-10">Info&nbsp;&nbsp;:&nbsp;&nbsp;<div id="info_mobile"></div></h5>
+                    <!-- <h5 class="font-general-white m-t-10">Marketing&nbsp;&nbsp;:&nbsp;&nbsp;<div id="marketing_mobile"></div></h5>  -->
+                </center>
+            </div>
+
+            <div class="col-xs-12 col-sm-12">
+                <ul class="list-inline text-center" style="margin-bottom: 0px;">
+                    <li><a href="https://shopee.co.id/emorylanggengjaya2020" target="_blank"><img src="/images/template/Shopee-logo.png" style="width: 30px;"></li>
+                    <li><a href="https://www.instagram.com/emorylanggengjaya/" target="_blank"><img src="/images/template/instagram.png" style="width: 30px;"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+ <script src="/javascripts/template/jquery.js"></script>
+    <script src="/javascripts/template/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            
+        });
+    </script>
+	
+	
+<script type="text/javascript">
+
+$.get( "contact/get_dataa", function( data ) {
+    console.log(data[0].address);
+
+  $( "#address_mobile" ).html("<h5 class=\"font-general-white m-t-0 m-b-0\">"+data[0].address+"</h5>");
+   $( "#phone_mobile" ).html("<h5 class=\"font-general-white m-t-0 m-b-0\">"+data[0].phone+"</h5>");
+    $( "#fax_mobile" ).html( "<h5 class=\"font-general-white m-t-0 m-b-0\">"+data[0].fax+"</h5>");
+     $( "#info_mobile" ).html( data[0].info );
+     $( "#marketing_mobile" ).html( data[0].marketing );
+  // alert( "Load was performed." );
+});
+
+$.get( "product_category/get_data", function( data ) {
+    console.log(data);
+    $.each(data, function(i, item){
+                                       //console.log(i);
+
+                                      if(i==0){
+                                        $("#list_produk").html('<li><a href="/products?cat='+item.id+'">'+item.kategori+'</a></li>');
+                                      }else{
+                                        $("#list_produk").append('<li><a href="/products?cat='+item.id+'">'+item.kategori+'</a></li>');
+                                      }
+                                      i++;
+                                    })  
+});
+</script>

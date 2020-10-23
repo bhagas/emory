@@ -1,0 +1,96 @@
+<% include ../../template-backoffice/header.ejs %>
+
+<!-- BEGIN PAGE CONTENT -->
+<div class="page-content">
+  <div class="header">
+    <h2><strong>Edit</strong>&nbsp;Contact</h2>
+    <div class="breadcrumb-wrapper">
+      <ol class="breadcrumb">
+        <li><a href="/">Dashboard</a></li>
+        <li>Management Contact</li>
+        <li class="active">Edit</li>
+      </ol>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel">
+        <div class="panel-header header-line">
+          <!-- Notifikasi -->
+        </div>
+        <div class="panel-content">
+          <div class="row">
+            <div class="col-md-12">
+
+              <!-- Start form -->
+              <form role="form" action="/contact/submit_edit" method="POST" enctype="multipart/form-data">
+                <input type="hidden" class="form-control" id="" name="id" value="<%= data[0]['id'] %>">
+                
+                <div class="form-group">
+                  <label>Address</label>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" name="address" id="" value="<%= data[0]['address'] %>">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>Phone </label>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" name="phone" id="" value="<%= data[0]['phone'] %>">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>Fax </label>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" name="fax" id="" value="<%= data[0]['fax'] %>">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>Info </label>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" name="info" id="" value="<%= data[0]['info'] %>">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>Marketing </label>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" name="marketing" id="" value="<%= data[0]['marketing'] %>">
+                    </div>
+                  </div>
+                </div>
+
+                
+                <button type="submit" class="btn btn-primary btn-embossed">Update</button>
+              </form>
+              <!-- End start form -->
+
+            </div>
+          </div>         
+        </div>
+      </div>
+    </div>  
+  </div>
+  <div class="footer">
+    <div class="copyright">
+      <p class="pull-left sm-pull-reset">
+        <span>Copyright <span class="copyright">©</span> 2016 </span>
+        <span>PT Emory Langgengjaya</span>.
+      </p>
+    </div>
+  </div>
+</div>
+<!-- END PAGE CONTENT -->
+
+<% include ../../template-backoffice/footer.ejs %>

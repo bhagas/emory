@@ -1,0 +1,81 @@
+<% include ../../template-backoffice/header.ejs %>
+
+<!-- BEGIN PAGE CONTENT -->
+<div class="page-content">
+  <div class="header">
+    <h2><strong>Management</strong>&nbsp;Product Category</h2>
+    <div class="breadcrumb-wrapper">
+      <ol class="breadcrumb">
+        <li><a href="/">Dashboard</a>
+        </li>
+        <li class="active">Management Product Category</li>
+      </ol>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel">
+        <div class="panel-header header-line">
+           <a class="btn btn-primary btn-embossed" href="/product_category/insert" role="button">Input Data</a>
+        </div>
+        <div class="panel-content">
+          <table class="table table-striped" id="thisdata">
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>Product Category</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            
+            <tbody>
+              <% for(var i=0; i<data.length; i++){ %>
+              <tr>
+                <td><%= i+1 %>.</td>
+                <td><%= data[i]['kategori'] %></td>
+                <td>
+                  <ul class="list-inline">
+                    <li><a class="btn btn-warning btn-embossed btn-sm" href="/product_category/edit/<%= data[i]['id'] %>" role="button" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></li>
+
+                    <li><a class="btn btn-danger btn-embossed btn-sm" href="/product_category/delete/<%= data[i]['id'] %>" role="button"><i class="fa fa-trash-o" aria-hidden="true"></i></a></li>
+                  </ul>
+                </td>
+              </tr>
+              <% } %>
+              <!-- <tr>
+                <td>1.</td>
+                <td>Snack Tray</td>
+                <td class="text-center">
+                  <a class="edit btn btn-warning btn-embossed btn-sm" href="/product_category/edit"><i class="icon-note"></i></a>
+                  <a class="delete btn btn-danger btn-embossed btn-sm" href=""><i class="icons-office-52"></i></a>
+                </td>
+              </tr> -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>  
+  </div>
+  <div class="footer">
+    <div class="copyright">
+      <p class="pull-left sm-pull-reset">
+        <span>Copyright <span class="copyright">©</span> 2016 </span>
+        <span>PT Emory Langgengjaya</span>.
+      </p>
+    </div>
+  </div>
+</div>
+<!-- END PAGE CONTENT -->
+
+<% include ../../template-backoffice/footer.ejs %>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+      $('#thisdata').DataTable({
+        columnDefs: [
+            { width: 50, targets: 0 },
+            { width: 100, targets: 2 }
+        ],
+      });
+  } );
+</script>

@@ -1,0 +1,157 @@
+<% include ../../template-backoffice/header.ejs %>
+<style type="text/css">
+  .table{
+    border: 0px solid #ffffff;
+  }
+  .table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td{ 
+              border: 0px solid #333; 
+          }
+</style>
+
+<!-- BEGIN PAGE CONTENT -->
+<div class="page-content">
+  <div class="header">
+    <h2><strong>Data</strong>&nbsp;Kritik & Saran</h2>
+    <div class="breadcrumb-wrapper">
+      <ol class="breadcrumb">
+        <li><a href="/">Dashboard</a>
+        </li>
+        <li class="active">Data Kritik & Saran</li>
+      </ol>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel">
+        <div class="panel-header header-line">
+           <!-- <a class="btn btn-primary btn-embossed" href="/kritik_saran/insert" role="button">Input Data</a> -->
+        </div>
+        <div class="panel-content">
+          <table class="table table-striped" id="data-kritik-saran">
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>Nama</th>
+                <th>Email</th>
+                <th>Contact Number</th>
+                <th>Inserted</th>
+                <th>Option</th>
+              </tr>
+            </thead>
+            <tbody>
+
+             <% for(var i=0; i<data.length; i++){ %>
+              <tr>
+                <td><%= i+1 %>.</td>
+                <td><%= data[i]['nama'] %></td>
+                <td><%= data[i]['email'] %></td>
+                <td><%= data[i]['telp'] %></td>
+                <td><%= data[i]['inserted'] %></td>
+                <td>
+                  <ul class="list-inline">
+                   <!--  <li><a class="btn btn-warning btn-embossed btn-sm" href="/kritik_saran/edit" role="button" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></li> -->
+
+                    <li><a class="btn btn-danger btn-embossed btn-sm" href="/kritik_saran/delete/<%= data[i]['id'] %>" role="button"><i class="fa fa-trash-o" aria-hidden="true"></i></a></li>
+
+                    <li><a class="btn btn-info btn-embossed btn-sm" onclick="modalmadul(<%= data[i]['id'] %>)" role="button" <i class="fa fa-info" aria-hidden="true"></i></a></li>
+                  </ul>
+                </td>
+              </tr>
+              <% } %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>  
+  </div>
+  <div class="footer">
+    <div class="copyright">
+      <p class="pull-left sm-pull-reset">
+        <span>Copyright <span class="copyright">©</span> 2016 </span>
+        <span>PT Emory Langgengjaya</span>.
+      </p>
+    </div>
+  </div>
+</div>
+<!-- END PAGE CONTENT -->
+
+<!-- Modal Detail -->
+<div class="modal fade modal-detail" id="modale" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Detail Kritik & Saran</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-12">
+            <table class="table table-bordered">
+              <tr>
+                <td style="width:180px;">Nama</td>
+                <td style="width:10px;">:</td>
+                <td id="namane"></td>
+              </tr>
+
+              <tr>
+                <td>Email</td>
+                <td>:</td>
+                <td id="emaile"></td>
+              </tr>
+
+              <tr>
+                <td>Contact Number</td>
+                <td>:</td>
+                <td id="telpe"></td>
+              </tr>
+
+              <tr>
+                <td>Message</td>
+                <td>:</td>
+                <td id="msge"></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Modal Detail -->
+<% include ../../template-backoffice/footer.ejs %>
+
+
+<script type="text/javascript">
+  $(document).ready(function() {
+      $('#data-kritik-saran').DataTable();
+
+  } );
+
+  function modalmadul (id) {
+    $.ajax({
+         type : "GET",
+         async : false,
+         global : false,
+         url : "/kritik_saran/json/"+id,
+         dataType : 'json',
+         success: function (data) {
+          if(data[0].msg!=""){
+            $('#msge').html(data[0].msg);
+          }else{
+            $('#msge').html("");
+          }
+
+          $('#namane').html(data[0].nama);
+          $('#emaile').html(data[0].email);
+          $('#telpe').html(data[0].telp);
+
+         }
+         })
+    $('#modale').modal('show');
+
+  }
+</script>
